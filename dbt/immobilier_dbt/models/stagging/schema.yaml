@@ -1,0 +1,28 @@
+version: 2
+
+models:
+
+  - name: dim_communes
+    columns:
+      - name: code_commune
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_departements
+    columns:
+      - name: code_departement
+        tests:
+          - unique
+
+  - name: dim_type_local
+    columns:
+      - name: code_type_local
+        tests:
+          - unique
+
+  - name: dim_dates
+    columns:
+      - name: date_mutation
+        tests:
+          - unique

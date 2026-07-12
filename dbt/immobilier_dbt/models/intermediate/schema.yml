@@ -1,0 +1,9 @@
+version: 2
+
+models:
+
+  - name: int_prix_m2
+
+  - name: int_type_local
+
+  - name: int_commune_stats

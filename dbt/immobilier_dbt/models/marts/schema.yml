@@ -1,0 +1,9 @@
+version: 2
+
+models:
+
+  - name: mart_prix_commune
+
+  - name: mart_evolution_prix
+
+  - name: mart_volume_ventes

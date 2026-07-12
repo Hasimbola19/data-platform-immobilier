@@ -1,0 +1,20 @@
+version: 2
+
+models:
+
+  - name: fct_transactions
+
+    columns:
+
+      - name: _id
+        tests:
+          - unique
+          - not_null
+
+      - name: valeur_fonciere
+        tests:
+          - not_null
+
+      - name: prix_m2
+        tests:
+          - not_null

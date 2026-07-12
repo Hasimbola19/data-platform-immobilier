@@ -1,0 +1,56 @@
+data-platform-immobilier/
+│
+├── README.md
+├── docker/
+│   └── docker-compose.yml
+│
+├── airflow/                 
+│
+├── airbyte/                 
+│
+├── postgres/
+│   └── init/                
+│
+├── dbt/
+│   ├── immobilier_dbt/
+│   │   ├── models/
+│   │   │   ├── staging/
+│   │   │   │   ├── stg_airbyte_dvf.sql
+│   │   │   │   ├── stg_insee_communes.sql
+│   │   │   │
+│   │   │   ├── marts/
+│   │   │   │   ├── fct_transactions.sql
+│   │   │   │   ├── dim_communes.sql
+│   │   │   │   ├── dim_departements.sql
+│   │   │   │
+│   │   │   └── intermediate/
+│   │   │       ├── int_prix_m2.sql
+│   │   │
+│   │   ├── tests/
+│   │   ├── macros/
+│   │   ├── seeds/
+│   │   ├── dbt_project.yml
+│   │   └── profiles.yml 
+│
+├── python/
+│   ├── ingestion/
+│   │   ├── fetch_dvf_api.py
+│   │   ├── fetch_insee.py
+│   │
+│   ├── cleaning/
+│   │   ├── clean_dvf.py
+│   │
+│   └── utils/
+│       ├── db_connector.py
+│
+├── powerbi/
+│   ├── dashboards/
+│   │   ├── immobilier.pbix
+│   └── model/
+│
+├── docs/
+│   ├── architecture.png
+│   ├── data_dictionary.md
+│   ├── pipeline_explanation.md
+│
+└── .gitignore
