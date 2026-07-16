@@ -2,11 +2,11 @@
 
 select
 
-annee,
+    annee,
 
-extract(month from date_mutation) as mois,
+    extract(month from date_mutation) as mois,
 
-avg(prix_m2) as prix_m2_moyen
+    avg(prix_m2) as prix_m2_moyen
 
 from {{ ref('fct_transactions') }}
 

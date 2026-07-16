@@ -2,11 +2,11 @@
 
 select
 
-annee,
+    annee,
 
-nom_commune,
+    nom_commune,
 
-count(*) as nb_ventes
+    count(*) as nb_ventes
 
 from {{ ref('fct_transactions') }}
 

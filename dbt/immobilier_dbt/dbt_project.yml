@@ -1,0 +1,30 @@
+name: immobilier_dbt
+version: '1.0.0'
+config-version: 2
+
+profile: immobilier_dbt
+
+model-paths:
+  - models
+  - dimensions
+  - facts
+
+macro-paths:
+  - macros
+
+seed-paths:
+  - seeds
+
+test-paths:
+  - tests
+
+analysis-paths:
+  - analysis
+
+clean-targets:
+  - target
+  - dbt_packages
+
+models:
+  immobilier_dbt:
+    +materialized: view

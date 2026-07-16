@@ -6,9 +6,13 @@ SELECT
 
     id_mutation,
 
+    annee,
+
     date_mutation,
 
     code_commune,
+
+    nom_commune,
 
     code_departement,
 

@@ -1,5 +1,12 @@
 version: 2
 
+sources:
+  - name: cote_d_amor
+    database: analytics
+    schema: cote_d_amor
+    tables:
+      - name: DVF
+
 models:
 
   - name: stg_dvf

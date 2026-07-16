@@ -1,7 +1,9 @@
-CASE
+{{ config(materialized='view') }}
 
-WHEN surface_reelle_bati IS NULL THEN 0
+SELECT
 
-ELSE surface_reelle_bati
+	*,
 
-END
+	COALESCE(surface_reelle_bati, 0) AS surface_reelle_bati_clean
+
+FROM {{ ref('stg_dvf') }}

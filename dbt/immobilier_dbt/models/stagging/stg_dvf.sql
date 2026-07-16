@@ -10,6 +10,7 @@ SELECT
 
     nom_commune,
     code_commune,
+    code_departement,
     code_postal,
 
     adresse_numero,
@@ -29,4 +30,4 @@ SELECT
     latitude,
     longitude
 
-FROM {{ source('raw','DVF') }}
+FROM {{ source('cote_d_amor', 'DVF') }}
